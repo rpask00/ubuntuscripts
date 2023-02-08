@@ -42,8 +42,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Autostart
-exec_always flameshot
-exec_always compton -b
+exec_always --no-startup-id flameshot
+exec_always --no-startup-id compton -b
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Settings
@@ -211,3 +211,11 @@ bar {
 }
 
 for_window [class="^.*"] border pixel 2, title_format " %title "
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~ Gaps
+gaps outer 0
+gaps inner 5
+gaps vertical 0
+gaps top 0
+gaps horizontal 10
+smart_gaps on
