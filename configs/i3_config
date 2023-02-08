@@ -43,6 +43,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Autostart
 exec_always flameshot
+exec_always compton -b
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Settings
