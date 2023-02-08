@@ -1,5 +1,6 @@
 #!/bin/sh
 
-cp ~/.config/i3/config ~/.config/scripts/i3_config
-cp ~/.ideavimrc ~/.config/scripts/.ideavimrc
-cp ~/.vimrc ~/.config/scripts/.vimrc
+cp ~/.config/i3/config ~/.config/scripts/configs/i3_config
+cp ~/.ideavimrc ~/.config/scripts/configs/.ideavimrc
+cp ~/.vimrc ~/.config/scripts/configs/.vimrc
+cp ~/.config/compton.conf ~/.config/scripts/configs/compton.conf
