@@ -13,7 +13,19 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:DejaVu Sans 9
+font pango: Ubuntu Mono 10
+
+set $screen-bg-color     #222831
+set $bg-color            #00ADB5
+set $inactive-bg-color   #393E46
+set $text-color          #EEEEEE
+set $inactive-text-color #00ADB5
+set $urgent-bg-color     #F05454
+set $indicator-color     #000000
+set $rofi-background-color #f2222831
+set $rofi-item-background-color #00222831
+set $rofi-text-color       #EEEEEE
+set $rofi-text-active-color #00ADB5
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -43,6 +55,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Autostart
 exec_always --no-startup-id flameshot
+exec_always --no-startup-id ~/.config/polybar/launch2.sh --material
 exec_always --no-startup-id compton -b
 
 
@@ -66,6 +79,9 @@ bindsym XF86AudioNext       exec --no-startup-id playerctl next
 bindsym XF86AudioPrev       exec --no-startup-id playerctl previous
 bindsym XF86AudioStop       exec --no-startup-id playerctl stop
 
+# Rofi
+bindsym $mod+d exec "rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/blocks/scripts/rofi/launcher.rasi"
+
 
 exec --no-startup-id setxkbmap pl
 exec --no-startup-id xwallpaper --daemon --zoom ~/.config/wallpaper
@@ -85,13 +101,13 @@ bindsym $mod+Shift+q kill
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+k focus down
+bindsym $mod+k focus downRRRRRR
 bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+semicolon focus rightRRR
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -210,9 +226,9 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    status_command i3status
-}
+# bar {
+#    status_command i3status
+#}
 
 for_window [class="^.*"] border pixel 2, title_format " %title "
 
