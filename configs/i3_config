@@ -61,6 +61,10 @@ for_window [class="copyq"] floating enable
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow
 bindsym Print exec flameshot gui
+bindsym XF86AudioPlay       exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext       exec --no-startup-id playerctl next
+bindsym XF86AudioPrev       exec --no-startup-id playerctl previous
+bindsym XF86AudioStop       exec --no-startup-id playerctl stop
 
 
 exec --no-startup-id setxkbmap pl
