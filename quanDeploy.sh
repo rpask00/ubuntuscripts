@@ -6,16 +6,13 @@ while getopts 'drij' OPTION; do
   case "$OPTION" in
     d)
       branch='develop'
-      dev='dev '
       ;;
     r)
       branch='release'
-      dev='rel '
       ;;
-      
+
     j)
       branch='Jrelease'
-      dev='java-rel '
       ;;
     i)
       git checkout $branch
@@ -47,7 +44,7 @@ cp -a ~/dev/rf-www-push/dist/. ~/dev/rf-www-build/
 today=$(date '+%d.%m.%Y')
 time=$(date '+%H:%M')
 
-commitmsg="$dev$today $time"
+commitmsg="$branch $today $time"
 
 echo "$commitmsg"
 
