@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Ubuntu Mono 10
+font pango: Ubuntu Mono 11
 
 set $screen-bg-color     #222831
 set $bg-color            #00ADB5
@@ -55,7 +55,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Autostart
 exec_always --no-startup-id flameshot
-exec_always --no-startup-id ~/.config/polybar/launch2.sh --material
+# exec_always --no-startup-id ~/.config/polybar/launch2.sh --material
 exec_always --no-startup-id compton -b
 
 
@@ -105,9 +105,9 @@ bindsym $mod+Shift+q kill
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+k focus downRRRRRR
+bindsym $mod+k focus down
 bindsym $mod+l focus up
-bindsym $mod+semicolon focus rightRRR
+bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -226,9 +226,9 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
+bar {
 #    status_command i3status
-#}
+}
 
 for_window [class="^.*"] border pixel 2, title_format " %title "
 
