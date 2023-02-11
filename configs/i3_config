@@ -71,7 +71,6 @@ exec_always --no-startup-id xinput --set-prop "Wings Tech Gaming Mouse" "libinpu
 for_window [class="copyq"] floating enable
 
 
-
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow
 bindsym Print exec flameshot gui
 bindsym XF86AudioPlay       exec --no-startup-id playerctl play-pause
@@ -241,5 +240,5 @@ gaps outer 0
 gaps inner 5
 gaps vertical 0
 gaps top 0
-gaps horizontal 10
+gaps horizontal 0
 smart_gaps on
