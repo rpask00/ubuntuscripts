@@ -16,6 +16,6 @@ while read -r pair; do
 
   cp "$source_file" "$target_file"
 
-  echo "$source_file --> $target_file"
+  echo "$source_file -> $target_file"
   echo ""
 done < "$config_locations"
