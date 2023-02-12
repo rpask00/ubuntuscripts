@@ -1,5 +1,7 @@
 #!/bin/sh
-./fetch_configs.sh
+cd ~/.config/scripts/
+
+~/fetch_configs.sh
 
 git add .
 
