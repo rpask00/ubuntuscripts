@@ -18,7 +18,7 @@ set showcmd
 set clipboard=unnamed
 
 " włącz otaczanie
-set surround
+" set surround
 
 
 " wrzuca kasowany tekst do black hole clipboard
