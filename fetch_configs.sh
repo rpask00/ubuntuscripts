@@ -8,7 +8,7 @@ while read -r pair; do
   source_file="${pair%% *}"
   target_file="${pair#* }"
   cp "$source_file" "$target_file"
-  file_pairs_file=$(eval echo "$file_pairs_file")
+  file_pairs_file=$(eval echo "$source_file")
   echo "$file_pairs_file"
   echo "Skopiowano plik $source_file do $target_file"
   echo ""
