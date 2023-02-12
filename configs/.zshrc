@@ -103,7 +103,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH="/home/rfl/dev/ebo/ebo-cli:$PATH"
-export PATH="~/.config/scripts/:$PATH"
+export PATH="$PATH:~/.config/scripts"
 
 . "$HOME/.cargo/env"
 
