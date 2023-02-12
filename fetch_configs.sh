@@ -13,6 +13,6 @@ while read -r pair; do
 
   cp "$source_file" "$target_file"
 
-  echo "Skopiowano plik $source_file do $target_file"
+  echo "$source_file --> $target_file"
   echo ""
 done < "$config_locations"
