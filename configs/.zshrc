@@ -96,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export cfg="$HOME/.config/"
-export cfgu="$HOME/.config/ubuntuscripts"
+export cfgs"$HOME/.config/ubuntuscripts/"
 
 
 export NVM_DIR="$HOME/.nvm"
