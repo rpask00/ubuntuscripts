@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ~/.config/scripts/
+cd ~/.config/ubuntuscripts/
 
 ./fetch_configs.sh
 

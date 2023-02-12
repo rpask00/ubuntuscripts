@@ -95,6 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export cfg="$HOME/.config/"
+export cfgu="$HOME/.config/ubuntuscripts"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -103,7 +106,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH="$HOME/dev/ebo/ebo-cli:$PATH"
-export PATH="$HOME/.config/scripts:$PATH"
+export PATH="$HOME/.config/ubuntuscripts:$PATH"
 
 . "$HOME/.cargo/env"
 
