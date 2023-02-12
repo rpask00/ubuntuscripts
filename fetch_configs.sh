@@ -3,6 +3,9 @@
 # Plik zawierający pary plików
 config_locations="config_locations.txt"
 
+echo "Kopiowanie plików konfiguracyjnych"
+echo ""
+
 # Kopiowanie plików
 while read -r pair; do
   source_file="${pair%% *}"
