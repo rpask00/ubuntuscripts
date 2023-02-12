@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/scripts$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -102,8 +102,8 @@ export NVM_DIR="$HOME/.nvm"
 
 
 
-export PATH="/home/rfl/dev/ebo/ebo-cli:$PATH"
-export PATH="$PATH:~/.config/scripts"
+export PATH="$HOME/dev/ebo/ebo-cli:$PATH"
+export PATH="$HOME/.config/scripts:$PATH"
 
 . "$HOME/.cargo/env"
 
