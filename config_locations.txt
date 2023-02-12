@@ -1,0 +1,7 @@
+~/.config/i3/config ~/.config/ubuntuscripts/configs/i3_config
+~/.ideavimrc ~/.config/ubuntuscripts/configs/.ideavimrc
+~/.vimrc ~/.config/ubuntuscripts/configs/.vimrc
+~/.config/compton.conf ~/.config/ubuntuscripts/configs/compton.conf
+~/.config/polybar/config ~/.config/ubuntuscripts/configs/polybar_config
+~/.zshrc ~/.config/ubuntuscripts/configs/.zshrc
+~/.bashrc ~/.config/ubuntuscripts/configs/.bashrc
