@@ -45,6 +45,6 @@ transparency=100
 allow-bold=true
 bold-is-bright=false
 cell-height-scale=1.1000000000000001
-palette='#151525253535:#ffff3c3c3c3c:#bfff3fff3fff:#ffff6f6f2323:#3d3db6b6f9f9:#8e8e4444adad:#1616a0a08585:#ffffffffffff:#2f30634b86d3:#ffff3c3c4c4b:#9393ffff9191:#ffffd0d05757:#5b5bd7d6ffff:#9b9a5959b6b6:#20205c5c5757:#ffffffffffff:#9393ffff9191:#0c0c1c1b2525'
+palette='#151525253535:#ffff3c3c3c3c:#2626a2a26969:#ffff6f6f2323:#3d3db6b6f9f9:#8e8e4444adad:#1616a0a08585:#ffffffffffff:#2f30634b86d3:#ffff3c3c4c4b:#9393ffff9191:#ffffd0d05757:#5b5bd7d6ffff:#9b9a5959b6b6:#20205c5c5757:#ffffffffffff:#9393ffff9191:#0c0c1c1b2525'
 palette-name='Custom'
 style='Fira Code 12'
