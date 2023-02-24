@@ -48,3 +48,6 @@ vnoremap <leader>d "+d
 :vnoremap l k
 :vnoremap ; l
 :vnoremap h ;
+
+
+
