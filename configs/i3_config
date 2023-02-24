@@ -62,6 +62,8 @@ exec_always --no-startup-id compton -b
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Settings
 exec_always --no-startup-id redshift -P -O 3000
 exec_always --no-startup-id xrandr --output HDMI-0 --auto --left-of DP-0
+exec_always --no-startup-id vibrant-cli DisplayPort-2 1.7
+exec_always --no-startup-id vibrant-cli HDMI-A-0 1.7
 
 #mouse
 exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
