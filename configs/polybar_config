@@ -9,6 +9,44 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
+[bar/tray]
+monitor-strict = false
+width = 20
+height = 25
+offset-x = 98% ######### offset values only dtermine the position of bar in the screen set it accordingly to your need
+offset-y = 35
+override-redirect = true  ############### to make offset vales to work override-direct value must be true
+fixed-center = true
+background = ${colors.modules-right-background}
+;foreground = ${colors.foreground}
+radius = 8
+line-size = 0
+line-color = #f00
+padding-left = 0
+padding-right = 1
+module-margin-left = 0
+module-margin-right = 0
+modules-right =  sep
+tray-position = right
+tray-detached = false
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 1
+bottom = true
+tray-maxsize = 20
+tray-scale = 1.0
+tray-background = ${colors.background}
+
+[module/arrow]
+
+type = custom/script
+
+exec = echo "arrow"
+
+click-left = bash $HOME/.config/polybar/tinybar.sh
+
+click-right = bash $HOME/.config/polybar/killbar.sh
+
 [bar/bar1]
 monitor = DisplayPort-2
 width = 100%
@@ -40,10 +78,11 @@ font-2 = "JetBrainsMono-Bold:size=10;2"
 
 modules-left = i3
 modules-center =
-modules-right = weather cava filesystem xbacklight alsa xkeyboard alsaunmute memory cpu temperature date powermenu
+modules-right = weather cava alsaunmute memory cpu temperature date powermenu
 
-tray-position = none
+tray-position = right
 tray-padding = 2
+tray-scale = 0.01
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -91,7 +130,7 @@ font-2 = "JetBrainsMono-Bold:size=10;2"
 
 modules-left = i3
 modules-center =
-modules-right = filesystem xbacklight alsa  xkeyboard alsaunmute memory cpu temperature date powermenu
+modules-right = weather alsaunmute memory cpu temperature date powerm3enu
 
 tray-position = none
 tray-padding = 2
@@ -203,6 +242,8 @@ icon-next = 
 label-song-maxlen = 25
 label-song-ellipsis = true
 
+
+
 [module/xbacklight]
 type = internal/xbacklight
 
@@ -228,7 +269,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -242,21 +283,6 @@ format-underline = #4bffdc
 label = %percentage_used%%
 
 
-[module/eth]
-type = internal/network
-interface = enp0s31f6
-interval = 3.0
-
-format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/cava]
 type = custom/script
@@ -282,6 +308,13 @@ format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
 label = %date% %time%
+
+
+[module/sep]
+type = custom/text
+content = " | "
+content-padding = 0
+
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -384,25 +417,25 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 
 label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-close = cancel
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
-menu-0-1 = power off
+menu-0-1 = poweroff
 menu-0-1-exec = menu-open-2
 
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+menu-1-1-exec = reboot
 
 menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
+menu-2-0-exec = shutdown 0
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
