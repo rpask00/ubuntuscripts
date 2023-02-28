@@ -61,7 +61,7 @@ cursor-click = pointer
 cursor-scroll = ns-resize
 
 [bar/bar2]
-monitor = HDMI-A-0
+monitor = DisplayPort-2
 width = 100%
 height = 30
 ;offset-x = 1%
@@ -86,12 +86,12 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = "JetBrainsMono-Bold:size=10;2"
-font-1 = "FontAwesome:size=10;4"
+font-1 = "FontAwesome:size=10;2"
 font-2 = "JetBrainsMono-Bold:size=10;2"
 
 modules-left = i3
 modules-center =
-modules-right = filesystem xbacklight alsa  xkeyboard alsaunmute memory cpu temperature date powermenu
+modules-right = weather cava filesystem xbacklight alsa xkeyboard alsaunmute memory cpu temperature date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -372,8 +372,8 @@ type = custom/script
 interval = 1
 format = <label>
 format-prefix = " "
-exec = python -u ~/.config/polybar/mic.py
-click-left = python -u ~/.config/polybar/toggle_mic_volumne.py
+exec = python -u ~/.config/polybar/modules/mic.py
+click-left = python -u ~/.config/polybar/modules/toggle_mic_volumne.py
 tail = true
 
 
