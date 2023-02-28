@@ -229,7 +229,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 # bar {}
 
-for_window [class="^.*"] border pixel 2, title_format " %title "
+for_window [class="^.*"] border pixel 0, title_format " %title "
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~ Gaps
 
