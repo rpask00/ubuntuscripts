@@ -77,8 +77,8 @@ font-1 = "FontAwesome:size=10;2"
 font-2 = "JetBrainsMono-Bold:size=10;2"
 
 modules-left = i3
-modules-center =
-modules-right = weather cava alsaunmute memory cpu temperature date powermenu
+modules-center = date
+modules-right = weather cava alsaunmute memory cpu temperature powermenu
 
 tray-position = right
 tray-padding = 2
@@ -129,8 +129,8 @@ font-1 = "FontAwesome:size=10;4"
 font-2 = "JetBrainsMono-Bold:size=10;2"
 
 modules-left = i3
-modules-center =
-modules-right = weather alsaunmute memory cpu temperature date powerm3enu
+modules-center = date
+modules-right = weather alsaunmute memory cpu temperature powermenu
 
 tray-position = none
 tray-padding = 2
