@@ -5,4 +5,4 @@
 ~/.config/polybar/config ~/.config/ubuntuscripts/configs/polybar_config
 ~/.zshrc ~/.config/ubuntuscripts/configs/.zshrc
 ~/.bashrc ~/.config/ubuntuscripts/configs/.bashrc
-
+~/.config/polybar/testdir ~/.config/ubuntuscripts/configs/polybar_testdir
