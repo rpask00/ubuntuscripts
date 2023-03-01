@@ -79,6 +79,9 @@ bindsym XF86AudioPlay       exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext       exec --no-startup-id playerctl next
 bindsym XF86AudioPrev       exec --no-startup-id playerctl previous
 bindsym XF86AudioStop       exec --no-startup-id playerctl stop
+# zamiana capslocka na esc
+exec_always --no-startup-id xmodmap -e "clear lock"
+exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 
 # Rofi
 bindsym $mod+d exec "rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/blocks/scripts/rofi/launcher.rasi"
