@@ -14,6 +14,12 @@ while read -r pair; do
   source_file=$(eval echo "$source_file")
   target_file=$(eval echo "$target_file")
 
+  # pomijanie pustych linii
+  if  [ -z "$source_file" ]; then
+    continue
+  fi
+
+
   if [ -d "$source_file" ]; then
 
     if [ -d "$target_file" ]; then
