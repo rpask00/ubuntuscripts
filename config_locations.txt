@@ -8,6 +8,4 @@
 ~/.zshrc ~/.config/ubuntuscripts/configs/.zshrc
 ~/.bashrc ~/.config/ubuntuscripts/configs/.bashrc
 
-~/.config/polybar/config ~/.config/ubuntuscripts/configs/polybar/config
-~/.config/polybar/modules ~/.config/ubuntuscripts/configs/polybar/modules
-~/.config/polybar/launch.sh ~/.config/ubuntuscripts/configs/polybar/launch.sh
+~/.config/polybar ~/.config/ubuntuscripts/configs/polybar
