@@ -5,7 +5,7 @@ import re
 # Uruchamia polecenie amixer -c 1 i przechwytuje wynik jako zmienną tekstową
 
 def get_mic_volume():
-    output = subprocess.check_output(["amixer", "-c", "1"]).decode()
+    output = subprocess.check_output(["amixer", "-c", "0"]).decode()
     output = output.split('\n')[-2]
 
     pattern = r'\[(.*?)\]'

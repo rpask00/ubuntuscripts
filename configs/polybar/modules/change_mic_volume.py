@@ -8,4 +8,4 @@ args = parser.parse_args()
 mic_volumne = args.arg1
 
 
-subprocess.check_output(["amixer", "-c", "1", "set", "Mic", mic_volumne]).decode()
+subprocess.check_output(["amixer", "-c", "0", "set", "Mic", mic_volumne]).decode()
