@@ -25,7 +25,7 @@ set $indicator-color     #000000
 set $rofi-background-color #f2222831
 set $rofi-item-background-color #00222831
 set $rofi-text-color       #EEEEEE
-set $rofi-text-active-color #00ADB5
+set $rofi-text-activode .e-color #00ADB5
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
