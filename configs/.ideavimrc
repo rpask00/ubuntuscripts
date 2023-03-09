@@ -51,6 +51,8 @@ vnoremap <leader>d "+d
 :set relativenumber
 :set number
 
+:nnoremap - ;
+
 :nnoremap j h
 :nnoremap k j
 :nnoremap l k
