@@ -59,7 +59,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ~/.config/ubuntuscripts/autoexec.sh
 #exec_always --no-startup-id compton -b
 exec_always --no-startup-id picom --experimental-backends --transparent-clipping
-
+exec --no-startup-id ~/.config/ubuntuscripts/i3-alternating-layout/alternating_layouts.py
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Settings
 exec_always --no-startup-id redshift -P -O 3000
@@ -72,7 +72,7 @@ exec_always --no-startup-id ~/.config/ubuntuscripts/mouse.sh
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Floating windows
 for_window [class="copyq"] floating enable
-for_window [class="nautilus"] floating enable
+for_window [class="Org.gnome.Nautilus"] floating enable
 
 
 
