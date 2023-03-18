@@ -72,10 +72,13 @@ exec_always --no-startup-id ~/.config/ubuntuscripts/mouse.sh
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Floating windows
 for_window [class="copyq"] floating enable
+for_window [class="nautilus"] floating enable
+
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow
 bindsym Print exec flameshot gui
+bindsym $mod+n              exec --no-startup-id nautilus
 bindsym XF86AudioPlay       exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext       exec --no-startup-id playerctl next
 bindsym XF86AudioPrev       exec --no-startup-id playerctl previous
@@ -99,7 +102,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
