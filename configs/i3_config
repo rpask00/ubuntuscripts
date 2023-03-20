@@ -25,7 +25,7 @@ set $indicator-color     #000000
 set $rofi-background-color #f2222831
 set $rofi-item-background-color #00222831
 set $rofi-text-color       #EEEEEE
-set $rofi-text-activode .e-color #00ADB5
+set $rofi-text-activode-color #00ADB5
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -59,21 +59,21 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ~/.config/ubuntuscripts/autoexec.sh
 
 # exec_always --no-startup-id compton --backend glx --vsync opengl
- exec_always --no-startup-id compton --backend glx --vsync opengl-oml
+# exec_always --no-startup-id compton --backend glx --vsync opengl-oml
 # exec_always --no-startup-id compton --backend glx --vsync opengl-swc
 # exec_always --no-startup-id compton --backend glx --vsync opengl-mswc
-# exec_always --no-startup-id compton -b
+ exec_always --no-startup-id compton -b
 # exec_always --no-startup-id picom --experimental-backends --transparent-clipping
 
 
 #exec_always --no-startup-id python ~/.config/ubuntuscripts/i3-alternating-layout/alternating_layouts.py
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Settings
-exec_always --no-startup-id xrandr --output DP-0 --primary --mode 3440x1440 --rate 144
-exec_always --no-startup-id xrandr --output HDMI-0 --auto --mode 2560x1440 --rate 75 --left-of DP-0
-exec_always --no-startup-id redshift -P -O 3000
+exec_always --no-startup-id xrandr --output HDMI-0 --auto --left-of DP-0 --mode 2560x1440 --rate 75
+# exec_always --no-startup-id xrandr --output DP-0 --primary --mode 3440x1440 --rate 144
 exec_always --no-startup-id vibrant-cli DP-0 2.7
 exec_always --no-startup-id vibrant-cli HDMI-0 2.7
+exec_always --no-startup-id redshift -P -O 3000
 
 
 
