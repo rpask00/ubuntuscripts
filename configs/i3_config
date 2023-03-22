@@ -83,6 +83,7 @@ exec_always --no-startup-id ~/.config/ubuntuscripts/mouse.sh
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Floating windows - works after reboot
 for_window [class="copyq"] floating enable
 for_window [class="Org.gnome.Nautilus"] floating enable
+for_window [class="kolourpaint"] floating enable
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow
