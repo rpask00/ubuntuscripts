@@ -157,6 +157,7 @@ unset color_prompt force_color_prompt
 export PATH="/home/rfl/dev/ebo/ebo-cli:$PATH"
 export PATH="~/.config/ubuntuscripts:$PATH"
 
+
 . "$HOME/.cargo/env"
 
 # Load Angular CLI autocompletion.

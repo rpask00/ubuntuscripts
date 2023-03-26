@@ -62,17 +62,17 @@ exec_always --no-startup-id ~/.config/ubuntuscripts/autoexec.sh
 # exec_always --no-startup-id compton --backend glx --vsync opengl-oml
 # exec_always --no-startup-id compton --backend glx --vsync opengl-swc
 # exec_always --no-startup-id compton --backend glx --vsync opengl-mswc
- exec_always --no-startup-id compton -b
+# exec_always --no-startup-id compton -b
 # exec_always --no-startup-id picom --experimental-backends --transparent-clipping
 
 
 #exec_always --no-startup-id python ~/.config/ubuntuscripts/i3-alternating-layout/alternating_layouts.py
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Settings
-exec_always --no-startup-id xrandr --output HDMI-0 --auto --left-of DP-0 --mode 2560x1440 --rate 75
+exec_always --no-startup-id xrandr --output HDMI-A-0 --auto --left-of DisplayPort-0 --mode 2560x1440 --rate 75
 # exec_always --no-startup-id xrandr --output DP-0 --primary --mode 3440x1440 --rate 144
-exec_always --no-startup-id vibrant-cli DP-0 2.7
-exec_always --no-startup-id vibrant-cli HDMI-0 2.7
+exec_always --no-startup-id vibrant-cli DisplayPort-0 1.6
+exec_always --no-startup-id vibrant-cli HDMI-A-0 1.6
 exec_always --no-startup-id redshift -P -O 3000
 
 
@@ -98,8 +98,9 @@ bindsym XF86AudioStop       exec --no-startup-id playerctl stop
 exec_always --no-startup-id xmodmap ~/.Xmodmap
 
 # Rofi
-bindsym $mod+d exec "rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar-example/blocks/scripts/rofi/launcher.rasi"
+ bindsym $mod+d exec "rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar-themes/simple/blocks/scripts/rofi/launcher.rasi"
 
+# bindsym $mod+d exec dmenu_run
 
 # set keyboard to pl language
 exec --no-startup-id setxkbmap pl
@@ -260,9 +261,9 @@ for_window [class="^.*"] border pixel 0, title_format " %title "
 default_border none
 default_floating_border none
 
-gaps outer 0
-gaps inner 6
-gaps vertical 0
-gaps top 0
-gaps horizontal 0
-smart_gaps on
+# gaps outer 0
+# gaps inner 6
+# gaps vertical 0
+# gaps top 0
+# gaps horizontal 0
+# smart_gaps on
