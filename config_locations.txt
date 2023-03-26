@@ -9,5 +9,6 @@
 ~/.bashrc ~/.config/ubuntuscripts/configs/.bashrc
 
 ~/.config/polybar ~/.config/ubuntuscripts/configs/polybar
+~/.config/rofi ~/.config/ubuntuscripts/configs/rofi
 
 ~/.Xmodmap ~/.config/ubuntuscripts/configs/.Xmodmap

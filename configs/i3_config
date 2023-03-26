@@ -22,10 +22,8 @@ set $text-color          #EEEEEE
 set $inactive-text-color #00ADB5
 set $urgent-bg-color     #F05454
 set $indicator-color     #000000
-set $rofi-background-color #f2222831
-set $rofi-item-background-color #00222831
-set $rofi-text-color       #EEEEEE
-set $rofi-text-activode-color #00ADB5
+
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -55,12 +53,14 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Autostart
 exec_always --no-startup-id flameshot
+exec_always --no-startup-id guake
+exec_always --no-startup-id copyq
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ~/.config/ubuntuscripts/autoexec.sh
 
 # exec_always --no-startup-id compton --backend glx --vsync opengl
 # exec_always --no-startup-id compton --backend glx --vsync opengl-oml
-# exec_always --no-startup-id compton --backend glx --vsync opengl-swc
+exec_always --no-startup-id compton --backend glx --vsync opengl-swc
 # exec_always --no-startup-id compton --backend glx --vsync opengl-mswc
 # exec_always --no-startup-id compton -b
 # exec_always --no-startup-id picom --experimental-backends --transparent-clipping
@@ -88,6 +88,7 @@ for_window [class="kolourpaint"] floating enable
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow
 bindsym Print               exec --no-startup-id flameshot gui
+bindsym Pause               exec --no-startup-id ~/.config/rofi/scripts/powermenu_t4
 bindsym $mod+n              exec --no-startup-id nautilus
 bindsym XF86AudioPlay       exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext       exec --no-startup-id playerctl next
@@ -98,7 +99,7 @@ bindsym XF86AudioStop       exec --no-startup-id playerctl stop
 exec_always --no-startup-id xmodmap ~/.Xmodmap
 
 # Rofi
- bindsym $mod+d exec "rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar-themes/simple/blocks/scripts/rofi/launcher.rasi"
+ bindsym $mod+d exec "~/.config/rofi/scripts/launcher_t1"
 
 # bindsym $mod+d exec dmenu_run
 
@@ -267,3 +268,9 @@ default_floating_border none
 # gaps top 0
 # gaps horizontal 0
 # smart_gaps on
+
+
+# Rofi
+bindsym $mod+p exec "rofi -show run -lines 3 -eh 2 -width 100 -padding 500 -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
+bindsym $mod+period exec "rofi -show emoji -modi emoji -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
+bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort > /dev/null -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
