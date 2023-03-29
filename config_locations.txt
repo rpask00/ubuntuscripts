@@ -10,5 +10,6 @@
 
 ~/.config/polybar ~/.config/ubuntuscripts/configs/polybar
 ~/.config/rofi ~/.config/ubuntuscripts/configs/rofi
+~/Pictures/Wallpapers ~/.config/ubuntuscripts/configs/Wallpapers
 
 ~/.Xmodmap ~/.config/ubuntuscripts/configs/.Xmodmap
