@@ -84,6 +84,7 @@ exec_always --no-startup-id ~/.config/ubuntuscripts/mouse.sh
 for_window [class="copyq"] floating enable
 for_window [class="Org.gnome.Nautilus"] floating enable
 for_window [class="kolourpaint"] floating enable
+for_window [class="simple-scan"] floating enable
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow
@@ -99,7 +100,7 @@ bindsym XF86AudioStop       exec --no-startup-id playerctl stop
 exec_always --no-startup-id xmodmap ~/.Xmodmap
 
 # Rofi
- bindsym $mod+d exec "~/.config/rofi/scripts/launcher_t1"
+bindsym $mod+d exec "~/.config/rofi/scripts/launcher_t1"
 
 # bindsym $mod+d exec dmenu_run
 
@@ -274,3 +275,4 @@ default_floating_border none
 bindsym $mod+p exec "rofi -show run -lines 3 -eh 2 -width 100 -padding 500 -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
 bindsym $mod+period exec "rofi -show emoji -modi emoji -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
 bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort > /dev/null -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
+
