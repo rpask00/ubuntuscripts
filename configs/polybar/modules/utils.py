@@ -12,7 +12,11 @@ def get_mic_id():
 
 
 def get_mic_volume():
-    mic_id = get_mic_id()
+    try:
+        mic_id = get_mic_id()
+    except:
+        return "---"
+
     output = subprocess.check_output(["amixer", "-c", mic_id]).decode()
     output = output.split('\n')[-2]
 

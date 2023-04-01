@@ -263,12 +263,12 @@ for_window [class="^.*"] border pixel 0, title_format " %title "
 default_border none
 default_floating_border none
 
-# gaps outer 0
-# gaps inner 6
-# gaps vertical 0
-# gaps top 0
-# gaps horizontal 0
-# smart_gaps on
+gaps outer 0
+gaps inner 6
+gaps vertical 0
+gaps top 0
+gaps horizontal 0
+smart_gaps on
 
 
 # Rofi
