@@ -131,3 +131,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+RPROMPT="[%D{%f/%m/%y} | %D{%L:%M:%S}]"

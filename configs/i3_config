@@ -85,6 +85,7 @@ for_window [class="copyq"] floating enable
 for_window [class="Org.gnome.Nautilus"] floating enable
 for_window [class="kolourpaint"] floating enable
 for_window [class="simple-scan"] floating enable
+for_window [class="flameshot"] floating enable
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow

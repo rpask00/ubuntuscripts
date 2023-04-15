@@ -27,3 +27,13 @@ def get_mic_volume():
         return match.group(1).strip()
     else:
         return "---"
+
+def get_network():
+    output = subprocess.check_output(["nmcli", "c"]).decode()
+    output = subprocess.check_output(['head', '-n', '2'], input=output, text=True)
+    output = subprocess.check_output(['tail', '-n', '1'], input=output, text=True)
+    
+    return output.strip().split(' ')[-1]
+    
+    
+get_network()
