@@ -83,6 +83,9 @@ exec_always --no-startup-id ~/.config/ubuntuscripts/mouse.sh
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Floating windows - works after reboot
 for_window [class="gnome-system-monitor"] floating enable
 for_window [class="copyq"] floating enable
+for_window [class="gnome-control-center"] floating enable
+for_window [class="File-roller"] floating enable
+for_window [class="file-roller"] floating enable
 for_window [class="Org.gnome.Nautilus"] floating enable
 for_window [class="kolourpaint"] floating enable
 for_window [class="simple-scan"] floating enable
@@ -93,6 +96,7 @@ for_window [class="flameshot"] floating enable
 bindsym Print               exec --no-startup-id flameshot gui
 bindsym Pause               exec --no-startup-id ~/.config/rofi/scripts/powermenu_t4
 bindsym $mod+n              exec --no-startup-id nautilus
+bindsym $mod+g              exec --no-startup-id gnome-control-center
 bindsym XF86AudioPlay       exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext       exec --no-startup-id playerctl next
 bindsym XF86AudioPrev       exec --no-startup-id playerctl previous

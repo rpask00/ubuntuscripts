@@ -8,7 +8,7 @@ while getopts 'drij' OPTION; do
       branch='develop'
       ;;
     r)
-      branch='release'
+      branch='relcan'
       ;;
 
     j)
