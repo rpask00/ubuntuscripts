@@ -30,7 +30,7 @@ git checkout $branch
 git checkout .
 git pull
 echo "Building and pushing $branch" 
-ng build --configuration production
+./node_modules/.bin/ng build --configuration production
 
 cd ~/dev/rf-www-build/
 git checkout $branch
