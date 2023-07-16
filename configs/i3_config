@@ -96,6 +96,7 @@ for_window [class="flameshot"] floating enable
 bindsym Print               exec --no-startup-id flameshot gui
 bindsym Pause               exec --no-startup-id ~/.config/rofi/scripts/powermenu_t4
 bindsym $mod+n              exec --no-startup-id nautilus
+bindsym $mod+p              exec --no-startup-id peek
 bindsym $mod+g              exec --no-startup-id gnome-control-center
 bindsym XF86AudioPlay       exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext       exec --no-startup-id playerctl next
@@ -289,7 +290,7 @@ smart_gaps on
 
 
 # Rofi
-bindsym $mod+p exec "rofi -show run -lines 3 -eh 2 -width 100 -padding 500 -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
+# bindsym $mod+p exec "rofi -show run -lines 3 -eh 2 -width 100 -padding 500 -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
 bindsym $mod+period exec "rofi -show emoji -modi emoji -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
 bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort > /dev/null -opacity '85' -bw 0 -color-normal '$rofi-item-background-color,$rofi-text-color,$rofi-item-background-color,$rofi-item-background-color,$rofi-text-active-color' -color-window '$rofi-background-color,$rofi-background-color,$rofi-background-color' -font 'System San Francisco Display 14'"
 
