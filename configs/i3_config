@@ -85,6 +85,7 @@ for_window [class="gnome-system-monitor"] floating enable
 for_window [class="copyq"] floating enable
 for_window [class="gnome-control-center"] floating enable
 for_window [class="File-roller"] floating enable
+for_window [class="gedit"] floating enable
 for_window [class="file-roller"] floating enable
 for_window [class="Org.gnome.Nautilus"] floating enable
 for_window [class="kolourpaint"] floating enable
