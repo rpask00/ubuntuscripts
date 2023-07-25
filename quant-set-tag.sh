@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/dev/rf-www
+cd ~/dev/quant-www
 
 branch="develop"
 prefix="dev"
