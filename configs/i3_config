@@ -69,9 +69,9 @@ exec_always --no-startup-id compton --backend glx --vsync opengl-swc
 #exec_always --no-startup-id python ~/.config/ubuntuscripts/i3-alternating-layout/alternating_layouts.py
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Settings
-exec_always --no-startup-id xrandr --output HDMI-A-0 --auto --left-of DisplayPort-0 --mode 2560x1440 --rate 75
+exec_always --no-startup-id xrandr --output HDMI-A-0 --auto --left-of DisplayPort-1 --mode 2560x1440 --rate 75
 # exec_always --no-startup-id xrandr --output DP-0 --primary --mode 3440x1440 --rate 144
-exec_always --no-startup-id vibrant-cli DisplayPort-0 1.6
+exec_always --no-startup-id vibrant-cli DisplayPort-1 1.6
 exec_always --no-startup-id vibrant-cli HDMI-A-0 1.6
 exec_always --no-startup-id redshift -P -O 3000
 

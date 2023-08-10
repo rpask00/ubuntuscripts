@@ -49,5 +49,7 @@ vnoremap <leader>d "+d
 :vnoremap ; l
 :vnoremap h ;
 
-
+nnoremap <silent><Leader>n :RangerOpenCurrentFile<CR>
+nnoremap <silent><Leader>c :RangerOpenCurrentDir<CR>
+nnoremap <silent><Leader>f :RangerOpenProjectRootDir<CR>
 

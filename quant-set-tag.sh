@@ -33,7 +33,7 @@ while getopts 'drts' OPTION; do
       branch='develop'
       ;;
     r)
-      branch='relcan'
+      branch='release'
       ;;
     t)
       prefix='test'
