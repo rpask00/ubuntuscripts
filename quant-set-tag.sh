@@ -34,8 +34,10 @@ while getopts 'drts' OPTION; do
       ;;
     r)
       branch='release'
+      prefix='test'
       ;;
     t)
+      branch='release'
       prefix='test'
       ;;
     s)
