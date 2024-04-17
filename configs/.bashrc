@@ -162,3 +162,4 @@ export PATH="~/.config/ubuntuscripts:$PATH"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+export PATH=/home/rfl/.cargo/bin:/home/rfl/.config/ubuntuscripts:/home/rfl/dev/ebo/ebo-cli:/home/rfl/.nvm/versions/node/v18.18.2/bin:/home/rfl/anaconda3/bin:/home/rfl/anaconda3/condabin:/home/rfl/bin:/usr/local/bin:/home/rfl/.cargo/bin:/home/rfl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rfl/.dotnet/tools:/home/rfl/.local/share/JetBrains/Toolbox/scripts:/usr/local/go/bin:/home/rfl/GoProjects/bin
