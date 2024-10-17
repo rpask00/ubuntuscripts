@@ -133,3 +133,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 source <(ng completion script)
 
 RPROMPT="[%D{%f/%m/%y} | %D{%L:%M:%S}]"
+
+
+export PATH="/home/rfl/.local/share/solana/install/active_release/bin:$PATH"
+
+
+
