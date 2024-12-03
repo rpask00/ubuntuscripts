@@ -34,11 +34,11 @@ while getopts 'drts' OPTION; do
       ;;
     r)
       branch='release'
-      prefix='test'
+      prefix='rel'
       ;;
     t)
       branch='release'
-      prefix='test'
+      prefix='rel'
       ;;
     s)
       skip_checkout='t'
