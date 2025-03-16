@@ -92,6 +92,7 @@ for_window [class="kolourpaint"] floating enable
 for_window [class="simple-scan"] floating enable
 for_window [class="flameshot"] floating enable
 for_window [class="obsidian"] floating enable
+for_window [class="obsidian"] floating enable
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow
@@ -192,7 +193,7 @@ bindsym $mod+a focus parent
 bindsym $mod+t focus child
 
 # keyboard language binds
-exec "setxkbmap -option 'grp:alt_shift_toggle' -layout pl,de -variant ,qwerty"
+exec "setxkbmap -layout pl,de -variant ,us -option 'grp:rctrl_rshift_toggle'"
 
 
 # Define names for default workspaces for which we configure key bindings later on.
@@ -324,7 +325,6 @@ bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -
 # exec --no-startup-id "i3-msg 'workspace 6; append_layout /home/rfl/.i3/workspace-6.json'"
 # exec --no-startup-id "firefox+"
 # exec --no-startup-id "firefox"
-
 
 
 

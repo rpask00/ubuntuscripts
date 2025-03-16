@@ -27,7 +27,7 @@ stash_and_pop_changes() {
     fi
 }
 
-while getopts 'drts' OPTION; do
+while getopts 'drtsf' OPTION; do
   case "$OPTION" in
     d)
       branch='develop'
@@ -35,6 +35,10 @@ while getopts 'drts' OPTION; do
     r)
       branch='release'
       prefix='rel'
+      ;;
+    f)
+      branch='future'
+      prefix='future'
       ;;
     t)
       branch='release'

@@ -13,3 +13,5 @@
 ~/Pictures/Wallpapers ~/.config/ubuntuscripts/configs/Wallpapers
 
 ~/.Xmodmap ~/.config/ubuntuscripts/configs/.Xmodmap
+
+~/.config/tmux ~/.config/ubuntuscripts/configs/tmux
