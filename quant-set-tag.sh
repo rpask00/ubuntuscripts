@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/dev/quant-www
+cd ~/dev/quant-www-deploy
 
 previous_branch=$(git branch | grep \* | cut -d ' ' -f2)
 pending_changes=$(git status --porcelain)
@@ -75,9 +75,11 @@ get_next_tag_number() {
 today=$(date +"%d-%m-%Y")
 next_number=$(get_next_tag_number "$prefix" "$today")
 new_tag="$prefix/$today/$next_number"
+confirm="t"
 
-echo "Czy chcesz ustawić tag: $new_tag ? (t/n)"
-read confirm
+# echo "Czy chcesz ustawić tag: $new_tag ? (t/n)"
+# read confirm
+
 
 if [ "$confirm" == "t" ]; then
     # Sprawdź, czy tag już nie istnieje
