@@ -137,5 +137,12 @@ RPROMPT="[%D{%f/%m/%y} | %D{%L:%M:%S}]"
 
 export PATH="/home/rfl/.local/share/solana/install/active_release/bin:$PATH"
 
+export LD_LIBRARY_PATH="/opt/rocm/lib"
 
+export ROCM_PATH="/opt/rocm"
+export ROCM_HOME="/opt/rocm"
+
+export HSA_OPENCL_BITCODE="/opt/rocm/amdgcn/bitcode/opencl.bc"
+
+export PATH=/opt/rocm/llvm/bin:$PATH
 

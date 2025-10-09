@@ -97,6 +97,8 @@ for_window [class="simple-scan"] floating enable
 for_window [class="flameshot"] floating enable
 for_window [class="obsidian"] floating enable
 for_window [class="obsidian"] floating enable
+for_window [class="eog"] floating enable
+for_window [class="proton-authenticator"] floating enable
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow
@@ -214,27 +216,32 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym $mod+1 workspace number $ws1; exec polybar-msg cmd hide;
-bindsym $mod+2 workspace number $ws2; exec polybar-msg cmd show;
-bindsym $mod+3 workspace number $ws3; exec polybar-msg cmd show;
-bindsym $mod+4 workspace number $ws4; exec polybar-msg cmd show;
-bindsym $mod+5 workspace number $ws5; exec polybar-msg cmd show;
-bindsym $mod+6 workspace number $ws6; exec polybar-msg cmd show;
-bindsym $mod+7 workspace number $ws7; exec polybar-msg cmd show;
-bindsym $mod+8 workspace number $ws8; exec polybar-msg cmd show;
-bindsym $mod+9 workspace number $ws9; exec polybar-msg cmd show;
-bindsym $mod+0 workspace number $ws1; exec polybar-msg cmd show;
+# bindsym $mod+1 workspace number $ws1; exec polybar-msg cmd hide; // example of hiding polybar on workspace 1
+# bindsym $mod+2 workspace number $ws2; exec polybar-msg cmd show; // example of showing polybar on workspace 2
+bindsym $mod+1 workspace number $ws1;
+bindsym $mod+2 workspace number $ws2;
+bindsym $mod+3 workspace number $ws3;
+bindsym $mod+4 workspace number $ws4;
+bindsym $mod+5 workspace number $ws5;
+bindsym $mod+6 workspace number $ws6;
+bindsym $mod+7 workspace number $ws7;
+bindsym $mod+8 workspace number $ws8;
+bindsym $mod+9 workspace number $ws9;
+bindsym $mod+0 workspace number $ws1;
 
-bindsym mod2+KP_1 workspace $ws1; exec polybar-msg cmd hide;
-bindsym mod2+KP_2 workspace $ws2; exec polybar-msg cmd show;
-bindsym mod2+KP_3 workspace $ws3; exec polybar-msg cmd show;
-bindsym mod2+KP_4 workspace $ws4; exec polybar-msg cmd show;
-bindsym mod2+KP_5 workspace $ws5; exec polybar-msg cmd show;
-bindsym mod2+KP_6 workspace $ws6; exec polybar-msg cmd show;
-bindsym mod2+KP_7 workspace $ws7; exec polybar-msg cmd show;
-bindsym mod2+KP_8 workspace $ws8; exec polybar-msg cmd show;
-bindsym mod2+KP_9 workspace $ws9; exec polybar-msg cmd show;
-bindsym mod2+KP_0 workspace $ws10; exec polybar-msg cmd show;
+
+# bindsym mod2+KP_1 workspace $ws1; exec polybar-msg cmd hide; // example of hiding polybar on workspace 1
+# bindsym mod2+KP_2 workspace $ws2; exec polybar-msg cmd show;  // example of showing polybar on workspace 2
+bindsym mod2+KP_1 workspace $ws1;
+bindsym mod2+KP_2 workspace $ws2;
+bindsym mod2+KP_3 workspace $ws3;
+bindsym mod2+KP_4 workspace $ws4;
+bindsym mod2+KP_5 workspace $ws5;
+bindsym mod2+KP_6 workspace $ws6;
+bindsym mod2+KP_7 workspace $ws7;
+bindsym mod2+KP_8 workspace $ws8;
+bindsym mod2+KP_9 workspace $ws9;
+bindsym mod2+KP_0 workspace $ws10;
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
