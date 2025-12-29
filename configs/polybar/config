@@ -49,7 +49,7 @@ font-2 = ${fonts.font0}
 
 modules-left = i3
 modules-center = date
-modules-right = network cava mic cpu memory powermenu
+modules-right = network cava cpu memory powermenu
 
 tray-position = null
 tray-padding = 2
@@ -101,7 +101,7 @@ font-1 = ${fonts.font1}
 font-2 = ${fonts.font0}
 
 modules-left = i3
-modules-center = date
+modules-center = date 
 modules-right = network cpu memory powermenu
 
 tray-position = null
