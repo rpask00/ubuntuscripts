@@ -103,6 +103,7 @@ for_window [class="obsidian"] floating enable
 for_window [class="eog"] floating enable
 for_window [class="sublime_text"] floating enable
 for_window [class="proton-authenticator"] floating enable
+for_window [class="crx_ojibjkjikcpjonjjngfkegflhmffeemk"] floating enable # proton calendar
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skróty klawiszow

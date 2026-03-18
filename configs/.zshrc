@@ -99,28 +99,30 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/rfl/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/rfl/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/rfl/anaconda3/etc/profile.d/conda.sh"
+conda() {
+    __conda_setup="$('/home/rfl/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
     else
-        export PATH="/home/rfl/anaconda3/bin:$PATH"
+        if [ -f "/home/rfl/anaconda3/etc/profile.d/conda.sh" ]; then
+            . "/home/rfl/anaconda3/etc/profile.d/conda.sh"
+        else
+            export PATH="/home/rfl/anaconda3/bin:$PATH"
+        fi
     fi
-fi
-unset __conda_setup
+    unset __conda_setup
+}
 # <<< conda initialize <<<
 
 
 export cfg="$HOME/.config/"
 export cfgs="$HOME/.config/ubuntuscripts/"
 
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+nvm() {
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
 
 
 export PATH="$HOME/dev/ebo/ebo-cli:$PATH"
@@ -130,7 +132,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 . "$HOME/.cargo/env"
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# If file not found, run run command below:
+# ng completion script > ~/.zsh_ng_completion
+source ~/.zsh_ng_completion
 
 RPROMPT="[%D{%f/%m/%y} | %D{%L:%M:%S}]"
 
@@ -145,4 +149,5 @@ export ROCM_HOME="/opt/rocm"
 export HSA_OPENCL_BITCODE="/opt/rocm/amdgcn/bitcode/opencl.bc"
 
 export PATH=/opt/rocm/llvm/bin:$PATH
-
+eval "$(direnv hook zsh)"
+set zle_bracketed_paste
