@@ -1,4 +1,4 @@
-# ubuntuscripts
+# dotfiles
 
 Pobieranie konfigów
 ```

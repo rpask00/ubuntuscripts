@@ -1,17 +1,17 @@
-~/.config/i3/config ~/.config/ubuntuscripts/configs/i3_config
+~/.config/i3/config ~/.config/dotfiles/configs/i3_config
 
-~/.ideavimrc ~/.config/ubuntuscripts/configs/.ideavimrc
-~/.vimrc ~/.config/ubuntuscripts/configs/.vimrc
+~/.ideavimrc ~/.config/dotfiles/configs/.ideavimrc
+~/.vimrc ~/.config/dotfiles/configs/.vimrc
 
-~/.config/compton.conf ~/.config/ubuntuscripts/configs/compton.conf
+~/.config/compton.conf ~/.config/dotfiles/configs/compton.conf
 
-~/.zshrc ~/.config/ubuntuscripts/configs/.zshrc
-~/.bashrc ~/.config/ubuntuscripts/configs/.bashrc
+~/.zshrc ~/.config/dotfiles/configs/.zshrc
+~/.bashrc ~/.config/dotfiles/configs/.bashrc
 
-~/.config/polybar ~/.config/ubuntuscripts/configs/polybar
-~/.config/rofi ~/.config/ubuntuscripts/configs/rofi
-~/Pictures/Wallpapers ~/.config/ubuntuscripts/configs/Wallpapers
+~/.config/polybar ~/.config/dotfiles/configs/polybar
+~/.config/rofi ~/.config/dotfiles/configs/rofi
+~/Pictures/Wallpapers ~/.config/dotfiles/configs/Wallpapers
 
-~/.Xmodmap ~/.config/ubuntuscripts/configs/.Xmodmap
+~/.Xmodmap ~/.config/dotfiles/configs/.Xmodmap
 
-~/.config/tmux ~/.config/ubuntuscripts/configs/tmux
+~/.config/tmux ~/.config/dotfiles/configs/tmux
