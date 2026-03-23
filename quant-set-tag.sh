@@ -75,13 +75,13 @@ get_next_tag_number() {
 today=$(date +"%d-%m-%Y")
 next_number=$(get_next_tag_number "$prefix" "$today")
 new_tag="$prefix/$today/$next_number"
-confirm="t"
+cnfrm="t"
 
 # echo "Czy chcesz ustawić tag: $new_tag ? (t/n)"
-# read confirm
+# read c
 
 
-if [ "$confirm" == "t" ]; then
+if [ "$cnfrm" == "t" ]; then
     # Sprawdź, czy tag już nie istnieje
     if git rev-parse "$new_tag" >/dev/null 2>&1; then
         echo "Błąd: Tag $new_tag już istnieje. Nie można go ponownie utworzyć."
