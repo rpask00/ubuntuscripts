@@ -116,7 +116,7 @@ conda() {
 
 
 export cfg="$HOME/.config/"
-export cfgs="$HOME/.config/dotfiles/"
+export cfgs="$HOME/.config/ubuntuscripts/"
 
 nvm() {
     export NVM_DIR="$HOME/.nvm"
@@ -126,7 +126,7 @@ nvm() {
 
 
 export PATH="$HOME/dev/ebo/ebo-cli:$PATH"
-export PATH="$HOME/.config/dotfiles:$PATH"
+export PATH="$HOME/.config/ubuntuscripts:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 . "$HOME/.cargo/env"
