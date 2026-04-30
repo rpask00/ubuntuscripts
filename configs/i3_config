@@ -53,6 +53,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # set default audio output (`pactl list short sinks` to find available outputs)
 exec --no-startup-id "pactl set-default-sink alsa_output.pci-0000_31_00.4.analog-stereo"
+exec --no-startup-id "set-source-volume alsa_input.usb-Creative_Technology_Ltd_Creative_Live__Cam_Sync_V3_SN0001-02.analog-stereo 0"
+exec --no-startup-id "pactl set-default-source alsa_input.usb-Kingston_HyperX_Quadcast_4110-00.analog-stereo"
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Autostart
@@ -85,7 +87,7 @@ exec_always --no-startup-id redshift -P -O 2800
 
 
 
-#mouse
+#mousec
 exec_always --no-startup-id ~/.config/dotfiles/mouse.sh
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Floating windows - works after reboot

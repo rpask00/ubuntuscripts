@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/dev/quant-www-deploy
+cd ~/dev/quant/quant-www-deploy
 
 previous_branch=$(git branch | grep \* | cut -d ' ' -f2)
 pending_changes=$(git status --porcelain)

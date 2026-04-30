@@ -66,6 +66,14 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+ENV_FILE="$HOME/.env"
+
+if [ -f "$ENV_FILE" ]; then
+  set -a
+  source "$ENV_FILE"
+  set +a
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
