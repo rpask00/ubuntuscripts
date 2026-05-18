@@ -161,6 +161,8 @@ eval "$(direnv hook zsh)"
 set zle_bracketed_paste
 
 
+nvm use 24 
+
 conda activate 
 if [ -f ".conda-env" ]; then
    ENV_NAME=$(cat .conda-env)
