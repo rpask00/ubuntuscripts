@@ -159,3 +159,12 @@ export HSA_OPENCL_BITCODE="/opt/rocm/amdgcn/bitcode/opencl.bc"
 export PATH=/opt/rocm/llvm/bin:$PATH
 eval "$(direnv hook zsh)"
 set zle_bracketed_paste
+
+
+conda activate 
+if [ -f ".conda-env" ]; then
+   ENV_NAME=$(cat .conda-env)
+   if [ "$CONDA_DEFAULT_ENV" != "$ENV_NAME" ]; then
+     conda activate "$ENV_NAME"
+   fi
+fi
